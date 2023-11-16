@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E0F4FF !important;
+}
+nav {
+    background-color: #14233b;
+}
+.dropdown-menu a:active {
+    background-color: white;
+    color: black;
+}
+#materi {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#materi h3 {
+    margin-top: 30px;
+}
+#materi p {
+    margin-top: 20px;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.isi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.link {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    color: #E0F4FF;
+    background-color: #14233b;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 13px;
+    font-size: 16px;
+    margin: 10px;
+    width: 20vh;
+}
+.logo {
+    max-width: 100%;
+}
+.button:hover{
+    color: #E0F4FF;
+    background-color: #e64845;
+}
+.button-sumber {
+    margin-top: 30px;
+}
+.button-sumber a{
+    background-color: #14233b;
+    color: #E0F4FF;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.button-sumber a:hover{
+    color: #E0F4FF;
+    text-decoration: underline;
+}
+p, li {
+    font-size: 18px;
+    text-align: justify;
+}
+footer {
+    margin-top: auto;
+}
+@media (max-width: 480px) {
+    .home {
+        margin-top: 50px;
+        max-width: 40vh;
+    }
+    .logo img {
+        max-width: 30vh;
+        max-height: 27vh;
+    }
+    .button {
+        width: 70%;
+    }
+    .judul h3 {
+        font-size: 1.2em;
+    }
+}

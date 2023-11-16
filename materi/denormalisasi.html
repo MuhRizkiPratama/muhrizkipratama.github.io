@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+
+    <!-- AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>Materi - Denormalisasi</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container">
+            <a style="color: white;" href="./../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+          <span class="navbar-brand mb-0 h1">Denormalisasi</span>
+        </div>
+    </nav>
+
+    <section data-aos="fade-down" data-aos-duration="2000" id="materi">
+        <div class="container">
+            <h3>Apa Itu Denormalisasi?</h3>
+            <p>Denormalisasi database  adalah  pelanggaran  aturan  normalisasi atau menjabarkan suatu tataan database yang telah normal untuk meningkatkan performa pengaksesan data pada database. Database yang telah normal disini dimaksudkan database yang redundansi datanya minim sehingga data yang disimpan tidak mengalami kerancuan dalam proses pengaksesan.</p>
+
+            <p>Kita dapat melakukan denormalisasi dalam 2 cara:</p>
+            <ol>
+                <li>Melalui pembuatan kolom baru pada tabel / mengabungkan kolom pada tabel satu dengan yang lain.</li>
+                <li>Melalui pembuatan tabel baru.</li>
+            </ol>
+            <p>Denormalisasi pertama : Total sks yang telah diambil seorang mahasiswa. ini dibentuk dari jumlah sks matakuliah yang pernah diambil.</p>
+            <p>Denormalisasi kedua : Pembuatan tabel jumlah kehadiran mahasiswa dalam satu semester. data ini dibentuk dari penjumlahan data harian mahasiswa.</p>
+            <div class="button-sumber">
+                <a href="https://ryandhi21.wordpress.com/2019/05/18/normalisasi-dan-denormalisasi-database/">Penjelasan Lebih Lengkap</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.js"></script>
+
+     <!-- AOS JS -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>

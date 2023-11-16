@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+
+    <!-- AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>Web Tugas Basis Data</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand mb-0 h1" href="#">M RIZKI PRATAMA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Materi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="materi/erd.html">Entity Relationship Diagram</a></li>
+              <li><a class="dropdown-item" href="materi/databasekey.html">Database Key</a></li>
+              <li><a class="dropdown-item" href="materi/normalisasi.html">Normalisasi Pada ERD</a></li>
+              <li><a class="dropdown-item" href="materi/denormalisasi.html">Denormalisasi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://www.youtube.com/playlist?list=PLPK_4I5jLEZiyQxmIhRMX4CcqBPym9UhX">Tugas Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="adirp.id">Dosen Pengampu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://ubpkarawang.ac.id/">UBP Karawang</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div data-aos="zoom-out" data-aos-duration="2000" class="container home" id="home">
+    <div class="logo">
+      <img src="./images/logo.png" width="400" height="300">
+    </div>
+    <div class="isi">
+      <div class="judul">
+        <h3 data-aos="zoom-out" data-aos-duration="2000">Website Sederhana Tugas Basis Data</h3>
+      </div>
+      <div class="link">
+        <a data-aos="zoom-out" data-aos-duration="2000" class="button" href="https://www.youtube.com/playlist?list=PLPK_4I5jLEZiyQxmIhRMX4CcqBPym9UhX">Tugas Video</a>
+        <a data-aos="zoom-out" data-aos-duration="2000" class="button" href="adirp.id">Dosen</a>
+        <a data-aos="zoom-out" data-aos-duration="2000" class="button" href="https://ubpkarawang.ac.id/">Ubp Karawang</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.js"></script>
+
+   <!-- AOS JS -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>

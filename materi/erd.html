@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+
+    <!-- AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>Materi - Entity Relationship Diagram</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container">
+            <a style="color: white;" href="./../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+          <span class="navbar-brand mb-0 h1">Entity Relationship Diagram</span>
+        </div>
+    </nav>
+
+    <section data-aos="fade-down" data-aos-duration="2000" id="materi">
+      <div class="container">
+        <h3>Etinty Relationship Diagram</h3>
+        <p>ERD (Entity Relationship Diagram) adalah sebuah gambar atau diagram yang digunakan untuk menggambarkan hubungan antara entitas (objek) dalam sebuah database.</p>
+        <p>Dalam ERD, entitas (objek) direpresentasikan sebagai kotak dengan atribut-atribut yang terkait dengan entitas tersebut. Hubungan antara entitas ditunjukkan oleh tanda panah atau garis yang menghubungkannya. ERD memungkinkan pengembang database untuk memvisualisasikan struktur database dengan jelas dan memahami bagaimana entitas saling terkait</p>
+        <p>Bentuknya seperti diagram yang menjelaskan hubungan antar objek data. Untuk menggambarkannya dibutuhkan:</p>
+          <ol>
+            <li>Notasi ialah seperangkat lambang yang menggambarkan data</li>
+            <li>Simbol sebagai lambang sebagai penanda</li>
+            <li>Bagan merupakan rancangan atau skema untuk mempermudah penafsiran</li>
+            <li>dan lain sebagainya.</li>
+          </ol>
+        <hr>
+
+        <h3>Komponen Umum Penyusun ERD</h3>
+        <p>Untuk membuat Entity Relationship Diagram dibutuhkan tiga komponen utama sebagai penyusunnya atau bisa juga disebut sebagai notasi.</p>
+        <h4>1. Etitas (etinty)</h4>
+        <img src="../images/entitas.png" alt="entitas" width="250" height="135" class="d-block m-auto">
+        <P>Entitas adalah sebuah objek berwujud nyata yang dapat dibedakan dengan objek lainnya. Objeknya dapat bersifat konkret maupun abstrak. Data konkret adalah sesuatu yang benar-benar ada atau dapat dirasakan oleh alat indra, sedangkan abstrak tidak berwujud.</P>
+        <p>Orang, buku, pegawai, perusahaan merupakan jenis entitas konkret. Berbeda dengan mata kuliah, kejadian, pekerjaan adalah benda tak berwujud.</p>
+
+        <h4>2. Atribut (field)</h4>
+        <img src="../images/atribut.png" alt="atribut" width="300" height="220" class="d-block m-auto">
+        <p>Pengertian ERD kedua yaitu field atau disebut sebagai atribut. Setiap entitas memiliki atribut untuk mendeskripsikan karakteristik dari suatu entitas. Untuk jenisnya dibedakan menjadi beberapa jenis, yaitu</p>
+        <p>Atribut key, atribut yang unik dan berbeda. Misalnya, Nomor pokok mahasiswa (NPM), NIM dan nomor pokok lainnya.</p>
+        <p>Atribut Composite, atribut yang terdiri dari beberapa sub atribut yang memiliki arti tertentu. Contohnya, nama lengkap yang dipecah menjadi nama depan, tengah, dan belakang.</p> 
+        <p>Dan atribut deviratif, yang dihasilkan dari atribut atau relasi lain. Jenis atribut ini tidak wajib ditulis dalam diagram ER atau pun disimpan dalam database. Sebagai contoh deriative attribute adalah usia, kelas, selisih harga, dan lain-lain.</p>
+            
+        <h4>3. Relasi (relation)</h4>
+        <img src="../images/relasi.png" alt="relasi" width="380" height="280" class="d-block m-auto">
+        <p>Selanjutnya ada relasi, hubungan antar entitas untuk menunjukkan adanya koneksi di antara sejumlah entitas yang berasal dari himpunan entitas berbeda. Misalnya, dalam hubungan entitas sistem akademik antara mahasiswa dan mata kuliah adalah “mengambil”.  Mahasiswa mengambil mata kuliah.</p>
+        <p>Dalam ERD terdapat kardinalitas relasi atau rasio kardinalitas untuk memetakan bagaimana data berhubungan satu sama lain yang terbagi menjadi empat, yaitu:</p>
+        <p>Relasi Pertama, One to One (1:1). Apa maksud dari satu ke satu ini? Misalnya terdapat entitas A dan B. Setiap entitas pada himpunan entitas A berhubungan paling banyak dengan satu entitas pada himpunan entitas B, begitu pun sebaliknya. Jadi, setiap anggota entitas A hanya boleh berhubungan dengan satu anggota entitas B saja. Contohnya, satu siswa (1) memiliki satu nomor siswa (1), dan sebaliknya.</p>
+        <p>Relasi Kedua, One to many (1:M). Satu ke Banyak ini maksudnya adalah setiap entitas pada himpunan entitas A dapat berhubungan dengan banyak entitas pada himpunan entitas B. Dengan kata lain, setiap anggota entitas A dapat berhubungan dengan lebih dari satu anggota entitas B. Akan tetapi, tidak sebaliknya. Contoh dari relasi One to Many ini adalah satu kelas (1) berisi banyak siswa (M), atau siswa mengikuti banyak ekstrakurikuler.</p>
+        <p>Relasi Ketiga, Many to One (M:1). Relasi ini merupakan kebalikan dari relasi sebelumnya. Untuk contohnya, yaitu banyak pegawai (M) bekerja dalam satu departemen (1), atau banyak dosen mengajar dalam satu mata kuliah.</p>
+        <p>Relasi Keempat, Many to Many (M:N). Setiap entity pada kumpulan entitas A dapat berhubungan dengan banyak entitas pada kumpulan data entitas B. Misalnya, banyak siswa (M) mempelajari banyak pelajaran (N). Demikian pula sebaliknya, banyak pelajaran (N) dipelajari banyak siswa (M).</p>
+            
+        <h4>4. Garis</h4>
+        <img src="../images/garis.png" alt="garis" width="200" height="350" class="d-block m-auto">
+        <p>Fungsi dari garis ini tidak hanya sebatas penghubung antar himpunan relasi dengan himpunan entitas, serta himpunan entitas dengan atributnya. Garis dapat mempermudah pengguna untuk melihat dan mengetahui alur sebuah ERD sehingga nampak jelas awal dan akhirnya.</p>
+        
+        <div class="button-sumber">
+          <a href="https://www.domainesia.com/berita/pengertian-erd-adalah/">Penjelasan Lebih Lengkap</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/bootstrap.js"></script>
+
+     <!-- AOS JS -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>

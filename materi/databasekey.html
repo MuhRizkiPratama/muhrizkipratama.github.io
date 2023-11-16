@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+
+    <!-- AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>Materi - Database Key</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container">
+            <a style="color: white;" href="./../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+          <span class="navbar-brand mb-0 h1">Database Key</span>
+        </div>
+    </nav>
+
+    <section data-aos="fade-down" data-aos-duration="2000" id="materi">
+        <div class="container">
+            <h3>Apa Itu key?</h3>
+            <p>Key dapat dipahami sebagai <b>tanda pengenal</b> untuk mengidentifikasi sebuah baris di dalam tabel. Artinya, masing-masing baris data pasti dan harus memiliki <b>tanda pengenal</b>-nya sendiri. Key dapat diibaratkan seperti Nomor Induk Kependudukan (NIK) untuk masyarakat Indonesia atau Nomor Induk Mahasiswa (NIM) untuk para mahasiswa.</p>
+            <p>Selain berperan sebagai <b>tanda pengenal</b>, jenis key dalam database juga berperan sebagai penghubung antara satu tabel dengan tabel lainnya. Seperti yang sudah kita bahas di awal tadi, penting bagi tabel-tabel dalam suatu relational database untuk saling terhubung antara satu dengan yang lainnya. Untuk bisa menghubungkan tabel-tabel dalam suatu relational database, kita perlu menggunakan jenis key dalam database kita. Oleh karena itu, fungsi key yang kedua ini juga tidak kalah penting nih dengan fungsinya sebagai <b>tanda pengenal</b>!</p>
+        
+            <h3>Jenis Key Dalam Database</h3>
+            <p>Jenis Key dalam database yang sebenarnya adalah atribut biasa yang dimana ditambahkan deklarasi query tertentu yang mana untuk dijadikan sebagai dari key pada tabel tersebut. Akan tetapi, sama dengan halnya yang ada di NIK dan juga NIM, atribut yang dijadikan juga harus bersifat unik yang dimana artinya antara data satu dan juga data lainnya tidak boleh harus sama. Selain dari itu juga bahwa atribut yang akan dijadikan sebuah key wajib diisi dan tidak diperbolehkan kosong.</p>
+            <p>Berikut ini adalah jenis jenis key:</p>
+
+            <h4>1. Primary Key</h4>
+            <img src="../images/Tabelmahasiswa.jpg" alt="tabelmahasiswa" width="380" height="135" class="d-block m-auto">
+            <p>Primary key adalah suatu nilai yang ada didalam suatu basis data yang dimana digunakan untuk mengidentifikasi suatu baris yang ada di dalam tabel. Nilai yang ada didalam primary key adalah unik. Sedangkan secara sederhananya primary key dapat juga diartikan sebagai kolom yang berisi nilai unik, yang dimana memiliki fungsi sebagai identitas yang untuk membedakan setiap record yang ada didalam suatu tabel. </p>
+            <p>Primary Key merupakan <b>tanda pengenal</b> yang ditetapkan untuk suatu tabel. Primary Key ini harus merupakan atribut yang paling cocok dan paling dapat membedakan data-data yang ada di dalam tabel tersebut. Misalnya, setiap mahasiswa pasti memiliki NIM dan nomor ponsel. Kedua atribut ini pasti merupakan data yang unik, kan? Tidak ada dua mahasiswa yang memiliki NIM dan nomor ponsel yang sama persis. Akan tetapi, mana atribut yang paling cocok untuk menjadi <b>tanda pengenal</b> dari mahasiswa? Yup, NIM pastinya lebih cocok untuk dijadikan <b>tanda pengenal</b> si mahasiswa!</p>
+        
+            <h4>2. Foreign Key</h4>
+            <p>Jenis key dalam database selanjutnya adalah Foreign Key. Apabila primary key berfungsi untuk menjalankan fungsi pertama dari key dalam database, yakni sebagai <b>tanda pengenal</b>, maka foreign key berfungsi untuk menjalankan fungsi kedua dari key dalam database, yakni sebagai penghubung antartabel.</p>
+            <P>Sebelum mempelajari penggunaan foreign key, mari kita simak kedua tabel di bawah ini:</P>
+            <img src="../images/Tabelsiswa.jpg" alt="tabelsiswa" width="380" height="140" class="d-block m-auto">
+            <img src="../images/Tabelkelas.jpg" alt="tabelkelas" width="330" height="135" class="d-block m-auto">
+            <p>Dari kedua tabel di atas, kita dapat melihat bahwa ada siswa dan ada kelas dalam suatu sekolah. Akan tetapi, kita tidak bisa melihat siswa mana masuk di kelas mana. Untuk memperjelas tabel di atas, kita dapat mengetahui jenis key dalam database menghubungkan kedua tabel dengan menggunakan foreign key.</p>
+            <p>Dari tabel di atas, dapat kita ketahui bahwa primary key dari tabel siswa adalah NIS atau Nomor Induk Siswa. Sementara, primary key dari tabel kelas adalah Kode Kelas. Untuk menghubungkan kedua tabel di atas, kita cukup menambahkan Kode Kelas sebagai foreign key pada Tabel Siswa. Dengan begitu, tampilan tabel siswa secara keseluruhan akan seperti di bawah ini:</p>
+            <img src="../images/Tabelsiswa2.jpg" alt="tabelsiswa2" width="400" height="140" class="d-block m-auto">
+            <p>Secara sederhana foreign key ini dapat diartikan sebagai kunci asing. Yang dimana definisi ini juga berlaku didalam pengolahan relasional database. Kunci asing (foreign key) adalah sebuah atribut yang terdapat didalam suatu tabel yang dimana untuk digunakan untuk menciptakan hubungan  antara dua tabel.</p>
+            <p>Fungsi dari forign key adalah foreign key digunakan untuk menandakan hubungan tabel yang satu dengan yang lainnya. Yang dimana istilah ini dikenal sebagai parent dan child. Suatu tabel dapat dikatakan sebagai child apabila didalam suatu tabel terdapat kolom yang merupakan rujukan terhadap tabel pertama atau parent. Selain itu juga foreign key ini memiliki fungsi:</p>
+            <ul>
+              <li>Dengan menggunakan kunci asing maka anda akan secara otomatis database akan konsisten dalam mempertahankan yang namanya integritas referensial. Dengan begitu maka database anda akan dapat memonitor setiap data yang akan dimasukan.</li>  
+              <li>Ketika anda telah menetapkan kunci primer di tabel utama anda maka itu akan memudahkan anda juga dalam melihat perancangan fisik database dengan menggunakan komponen yang saling terkait.</li>  
+              <li>Dengan membuat kolom yang digunakan sebagai foreign key maka dapat juga memudahkan anda untuk melakukan operasi pengolahan setiap data yang akan disimpan didalam database anda.</li>  
+            </ul>
+
+            <h4>3. Candidate Key</h4>
+            <p>Jenis key dalam database selanjutnya adalah Candidate key ini berperan sebagai untuk mengidentifikasi adanya kejadian yang spesial pada tabel anda. pada candidate key ini juga memiliki syarat sebuah kunci yang dinamakan candidate key adalah unik identifier, serta juga candidate key ini non duplikat. Yang dimana maksudnya tidak ada kunci yang memiliki ciri khas yang sama dengan candidate key.</p>
+
+            <div class="button-sumber">
+                <a href="https://codingstudio.id/blog/5-jenis-key-dalam-database/">Penjelasan Lebih Lengkap</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.js"></script>
+
+     <!-- AOS JS -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>

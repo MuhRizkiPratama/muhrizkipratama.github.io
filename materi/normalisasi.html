@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+
+    <!-- AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>Materi - Normalisasi Pada ERD</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container">
+            <a style="color: white;" href="./../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+          <span class="navbar-brand mb-0 h1">Normalisasi Pada ERD</span>
+        </div>
+    </nav>
+
+    <section data-aos="fade-down" data-aos-duration="2000" id="materi">
+        <div class="container">
+            <h3>Apa Itu Normalisasi?</h3>
+            <p>Normalisasi dalam konteks Entity-Relationship Diagram (ERD) adalah proses merancang basis data dengan tujuan mengurangi redundansi dan meningkatkan integritas data. Tujuannya adalah untuk memastikan bahwa data disimpan dalam struktur yang efisien, sehingga menghindari masalah seperti anomali penggabungan, update anomali, dan delete anomali yang dapat terjadi dalam basis data yang tidak ternormalisasi.</p>
+            <p>Ada beberapa bentuk normalisasi yang umum digunakan, dan setiap bentuk normalisasi memiliki tingkat kompleksitas yang berbeda. Bentuk normalisasi yang paling umum adalah bentuk normalisasi pertama hingga bentuk normalisasi kelima (1NF hingga 5NF), meskipun terdapat juga bentuk normalisasi yang lebih tinggi, seperti normalisasi Domain-Key Normal Form (DKNF) dan Sixth Normal Form (6NF).</p>
+            <p>Berikut adalah ringkasan beberapa bentuk normalisasi yang umum digunakan:</p>
+            <ol>
+                <li>First Normal Form (1NF): Setiap kolom dalam tabel harus berisi data atomik, dan setiap baris dalam tabel harus unik. Tidak ada pengulangan data.</li>
+                <li>Second Normal Form (2NF): Tabel harus berada dalam 1NF, dan setiap kolom yang bukan kunci harus sepenuhnya bergantung pada seluruh kunci utama.</li>
+                <li>Third Normal Form (3NF): Tabel harus berada dalam 2NF, dan setiap kolom yang bukan kunci tidak boleh memiliki dependensi transitif pada kunci utama.</li>
+                <li>Boyce-Codd Normal Form (BCNF): Tabel harus memenuhi persyaratan 3NF, dan setiap atribut non-kunci harus bergantung sepenuhnya pada kunci utama. Ini adalah bentuk normalisasi yang lebih ketat daripada 3NF.</li>
+            </ol>
+            <p>Normalisasi adalah proses yang penting dalam merancang basis data yang efisien dan dapat membantu menghindari masalah seperti anomali dan inkonsistensi data. Namun, terlalu banyak normalisasi juga dapat menghasilkan jumlah tabel yang besar dan kompleksitas yang sulit dikelola, sehingga perlu dilakukan keseimbangan yang tepat dalam merancang basis data.</p>
+            <div class="button-sumber">
+                <a href="https://medium.com/@if22.trisnawiharja/normalisasi-dalam-erd-8469d39b1028">Penjelasan Lebih Lengkap</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.js"></script>
+
+     <!-- AOS JS -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>
