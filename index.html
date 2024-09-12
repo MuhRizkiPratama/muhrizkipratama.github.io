@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Basis Data</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="first">Basis</div>
+            <div class="last">Data</div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="wrapper-card">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Normalisasi</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Normalisasi dalam konteks Entity-Relationship Diagram (ERD) adalah proses merancang basis data dengan tujuan mengurangi redundansi dan meningkatkan integritas data.</p>
+                        <button class="button" id="button-normalisasi">Materi Lengkap</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Denormalisasi</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Denormalisasi adalah pelanggaran aturan normalisasi suatu tataan database yang telah normal untuk meningkatkan performa pengaksesan data pada database.</p>
+                        <button class="button" id="button-denormalisasi">Materi Lengkap</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>ERD</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>ERD (Entity Relationship Diagram) adalah sebuah gambar atau diagram yang digunakan untuk menggambarkan hubungan antara entitas (objek) dalam sebuah database.</p>
+                        <button class="button" id="button-erd">Materi Lengkap</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="modal" id="modal-normalisasi">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Normalisasi</h3>
+                        <i id="close-normalisasi" class="ri-close-line"></i>
+                    </div>
+                    <div class="modal-body">
+                        <p>Normalisasi dalam konteks Entity-Relationship Diagram (ERD) adalah proses merancang basis data dengan tujuan mengurangi redundansi dan meningkatkan integritas data.</p>
+                        <p>Ada beberapa bentuk normalisasi yang umum digunakan, dan setiap bentuk normalisasi memiliki tingkat kompleksitas yang berbeda. Bentuk normalisasi yang paling umum adalah bentuk normalisasi pertama hingga bentuk normalisasi kelima (1NF hingga 5NF), meskipun terdapat juga bentuk normalisasi yang lebih tinggi, seperti normalisasi Domain-Key Normal Form (DKNF) dan Sixth Normal Form (6NF).</p>
+                        <p>Berikut adalah ringkasan beberapa bentuk normalisasi yang umum digunakan:</p>
+                        <ol>
+                            <li>First Normal Form (1NF): Setiap kolom dalam tabel harus berisi data atomik, dan setiap baris dalam tabel harus unik. Tidak ada pengulangan data.</li>
+                            <li>Second Normal Form (2NF): Tabel harus berada dalam 1NF, dan setiap kolom yang bukan kunci harus sepenuhnya bergantung pada seluruh kunci utama.</li>
+                            <li>Third Normal Form (3NF): Tabel harus berada dalam 2NF, dan setiap kolom yang bukan kunci tidak boleh memiliki dependensi transitif pada kunci utama.</li>
+                            <li>Boyce-Codd Normal Form (BCNF): Tabel harus memenuhi persyaratan 3NF, dan setiap atribut non-kunci harus bergantung sepenuhnya pada kunci utama. Ini adalah bentuk normalisasi yang lebih ketat daripada 3NF.</li>
+                        </ol>
+                        <p>Normalisasi adalah proses yang penting dalam merancang basis data yang efisien dan dapat membantu menghindari masalah seperti anomali dan inkonsistensi data. Namun, terlalu banyak normalisasi juga dapat menghasilkan jumlah tabel yang besar dan kompleksitas yang sulit dikelola, sehingga perlu dilakukan keseimbangan yang tepat dalam merancang basis data.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-denormalisasi">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Denormalisasi</h3>
+                        <i id="close-denormalisasi" class="ri-close-line"></i>
+                    </div>
+                    <div class="modal-body">
+                        <p>Denormalisasi database  adalah  pelanggaran  aturan  normalisasi atau menjabarkan suatu tataan database yang telah normal untuk meningkatkan performa pengaksesan data pada database. Database yang telah normal disini dimaksudkan database yang redundansi datanya minim sehingga data yang disimpan tidak mengalami kerancuan dalam proses pengaksesan.</p>
+                        <p>Kita dapat melakukan denormalisasi dalam 2 cara:</p>
+                        <ol>
+                            <li>Melalui pembuatan kolom baru pada tabel / mengabungkan kolom pada tabel satu dengan yang lain.</li>
+                            <li>Melalui pembuatan tabel baru.</li>
+                        </ol>
+                        <p>Denormalisasi pertama : Total sks yang telah diambil seorang mahasiswa. ini dibentuk dari jumlah sks matakuliah yang pernah diambil.</p>
+                        <p>Denormalisasi kedua : Pembuatan tabel jumlah kehadiran mahasiswa dalam satu semester. data ini dibentuk dari penjumlahan data harian mahasiswa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-erd">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>ERD</h3>
+                        <i id="close-erd" class="ri-close-line"></i>
+                    </div>
+                    <div class="modal-body">
+                        <p>ERD (Entity Relationship Diagram) adalah sebuah gambar atau diagram yang digunakan untuk menggambarkan hubungan antara entitas (objek) dalam sebuah database.</p>
+                        <p>Dalam ERD, entitas (objek) direpresentasikan sebagai kotak dengan atribut-atribut yang terkait dengan entitas tersebut. Hubungan antara entitas ditunjukkan oleh tanda panah atau garis yang menghubungkannya. ERD memungkinkan pengembang database untuk memvisualisasikan struktur database dengan jelas dan memahami bagaimana entitas saling terkait</p>
+                        <p>Bentuknya seperti diagram yang menjelaskan hubungan antar objek data. Untuk menggambarkannya dibutuhkan:</p>
+                        <ol>
+                            <li>Notasi ialah seperangkat lambang yang menggambarkan data</li>
+                            <li>Simbol sebagai lambang sebagai penanda</li>
+                            <li>Bagan merupakan rancangan atau skema untuk mempermudah penafsiran</li>
+                            <li>dan lain sebagainya.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer>
+        <p>Copyright By Muhammad Rizki Pratama</p>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>
