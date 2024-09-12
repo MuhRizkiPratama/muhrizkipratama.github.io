@@ -94,9 +94,9 @@ header{
 }
 .modal-content {
   background-color: #14a7a0;
-  margin: 5vh 2vh; 
+  margin: 5vh auto; 
   padding: 20px;
-  width: 70vh;
+  width: 50vh;
   height: 80%;
   color: white;
   text-align: justify;
@@ -114,11 +114,11 @@ header{
 .modal-header i:hover{
     cursor: pointer;
 }
-@media only screen and (max-height: 320px) and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
     .card{
         width: 42vh;
     }
     .modal-content{
-        width: 45vh;
+        width: 50vh;
     }
 }
