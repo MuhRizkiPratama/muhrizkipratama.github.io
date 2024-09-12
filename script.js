@@ -17,7 +17,6 @@ const closeErd = document.getElementById('close-erd');
 buttonNormalisasi.addEventListener('click', function(){
     modalNormalisasi.style.display = 'flex';
 });
-
 closeNormalisasi.addEventListener('click', function(){
     modalNormalisasi.style.display = 'none';
 });
@@ -26,7 +25,6 @@ closeNormalisasi.addEventListener('click', function(){
 buttonDenormalisasi.addEventListener('click', function(){
     modalDenormalisasi.style.display = 'flex';
 });
-
 closeDenormalisasi.addEventListener('click', function(){
     modalDenormalisasi.style.display = 'none';
 });
@@ -35,7 +33,16 @@ closeDenormalisasi.addEventListener('click', function(){
 buttonErd.addEventListener('click', function(){
     modalErd.style.display = 'flex';
 });
-
 closeErd.addEventListener('click', function(){
     modalErd.style.display = 'none';
 });
+
+// Menghitung Luas Segitiga
+// const alas = prompt('Masukan alas');
+// const tinggi = prompt('Masukan tinggi');
+
+// const menghitungSegitiga = (alas, tinggi) => {
+//     return 0.5 * alas * tinggi;
+// };
+
+// alert(`Jadi hasil dari luas segitiga dengan ${alas} dan ${tinggi} adalah ${menghitungSegitiga(alas, tinggi)}`);
