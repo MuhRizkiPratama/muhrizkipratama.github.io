@@ -33,23 +33,25 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #dc3545;
-    width: 35vh;
-    height: 45vh;
-    padding: 5px 15px;
+    width: 40vh;
+    padding: 15px;
     text-align: justify;
     color: white;
     border-radius: 10px;
     box-shadow: 4px 4px #14a7a0;
+    overflow: auto;
 }
 .card-header{
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
 }
 .card-body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size: 14px;
 }
 .button{
     background-color: #14a7a0;
@@ -81,6 +83,7 @@ body {
   color: white;
   text-align: justify;
   overflow: scroll;
+  border-radius: 10px;
 }
 .modal-header{
     display: flex;
@@ -93,8 +96,34 @@ body {
 .modal-header i:hover{
     cursor: pointer;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+    .wrapper-card{
+        margin: 5vh 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 30vh;
+    }
     .modal-content{
+        width: 40vh;
+    }
+}
+@media only screen and (max-height: 480px) and (min-width: 800px) {
+    .card{
+        width: 60vh;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+    .wrapper-card{
+        margin: 5vh 0;
+    }
+    .card{
+        width: 50vh;
+    }
+}
+@media only screen and (max-width: 320px){
+    .card{
         width: 40vh;
     }
 }
