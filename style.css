@@ -50,12 +50,12 @@ header{
     justify-content: center;
     flex-direction: column;
     background-color: #dc3545;
-    width: 40vh;
-    padding: 15px;
+    width: 200px;
+    padding: 10px;
     text-align: justify;
     color: white;
     border-radius: 10px;
-    box-shadow: 4px 4px #14a7a0;
+    box-shadow: 2px 2px 2px 2px #14a7a0;
     overflow: auto;
 }
 .card-header{
@@ -126,11 +126,10 @@ header{
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    width: 40vh;
-    height: 40vh;
+    width: 200px;
     background-color: #14a7a0;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px black;
+    box-shadow: 2px 2px 2px 2px #dc3545;
     justify-content: center;
 }
 .youtube-header{
@@ -180,9 +179,12 @@ footer{
 }
 @media only screen and (max-width: 800px) {
     .card{
-        width: 42vh;
+        width: 250px;
     }
     .modal-content{
         width: 50vh;
+    }
+    .youtube{
+        width: 250px;;
     }
 }
